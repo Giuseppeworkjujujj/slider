@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="root">
+        <div class="container">
+            <div class="prev">
+                <button @click="prev()">
+                <i  class="fas fa-backward"></i>
+                </button>
+            </div>
+            <div class="img">
+                <div class="pallini">
+                    <i :class="(index == contatore) ? 'active' : null" v-for="(foto, index) in img" class="fas fa-circle"></i>
+                </div>
+                <img :src="img[contatore]" alt="">
+            </div>
+            <div class="next">
+                <button @click="next()">
+                <i  class="fas fa-forward"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
+    <script src="main.js"></script>
+</body>
+</html>
