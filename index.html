@@ -19,7 +19,7 @@
             </div>
             <div class="img">
                 <div class="pallini">
-                    <i :class="(index == contatore) ? 'active' : null" v-for="(foto, index) in img" class="fas fa-circle"></i>
+                    <i :class="(index == contatore) ? 'actives': null" v-for="(foto, index) in img" class="fas fa-circle"></i>
                 </div>
                 <img :src="img[contatore]" alt="">
             </div>

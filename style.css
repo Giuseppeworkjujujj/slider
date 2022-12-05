@@ -50,14 +50,13 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-
+    color: white;
 }
 
 .pallini i  {
     font-size: 30px;
-    color: white;
 }
 
-.active {
+.actives {
     color:blue;
 }
